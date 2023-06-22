@@ -1,6 +1,8 @@
 package pl.wsb.librarygame.model;
 
-public class Game {
+import java.io.Serializable;
+
+public class Game implements Serializable {
     private String name;
 
     public Game(String name) {

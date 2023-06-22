@@ -3,13 +3,16 @@ package pl.wsb.librarygame;
 import pl.wsb.librarygame.model.User;
 import pl.wsb.librarygame.service.LibraryService;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+    private static final String DATA_FILE = "users.ser";
+
     public static void main(String[] args) {
-        List<User> users = new ArrayList<>();
+        List<User> users = loadUsers();
         Scanner scanner = new Scanner(System.in);
 
         boolean exit = false;
@@ -46,6 +49,8 @@ public class Main {
                     System.out.println("Nieprawidłowy wybór. Wybierz opcję od 1 do 5.");
             }
         }
+
+        saveUsers(users);
     }
 
     public static void displayMenu() {
@@ -65,5 +70,22 @@ public class Main {
         System.out.println("Numer albumu: 24229");
         System.out.println("Grupa: C5 - niestacjonarne");
         System.out.println("------------------------------");
+    }
+
+    private static List<User> loadUsers() {
+        try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(DATA_FILE))) {
+            return (List<User>) inputStream.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            System.out.println("Wczytywanie użytkowników nie powiodło się. Tworzenie nowej listy użytkowników.");
+            return new ArrayList<>();
+        }
+    }
+
+    private static void saveUsers(List<User> users) {
+        try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(DATA_FILE))) {
+            outputStream.writeObject(users);
+        } catch (IOException e) {
+            System.out.println("Zapisywanie użytkowników nie powiodło się.");
+        }
     }
 }

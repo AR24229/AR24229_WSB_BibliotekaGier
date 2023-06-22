@@ -1,6 +1,8 @@
 package pl.wsb.librarygame.model;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private String nickname;
     private Library library;
 
