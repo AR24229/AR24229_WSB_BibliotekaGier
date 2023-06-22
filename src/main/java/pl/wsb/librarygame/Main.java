@@ -8,9 +8,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Główna klasa programu zarządzającego biblioteką gier.
+ */
 public class Main {
     private static final String DATA_FILE = "users.ser";
 
+    /**
+     * Metoda główna programu.
+     *
+     * @param args Argumenty wiersza poleceń.
+     */
     public static void main(String[] args) {
         List<User> users = loadUsers();
         Scanner scanner = new Scanner(System.in);
@@ -53,6 +61,9 @@ public class Main {
         saveUsers(users);
     }
 
+    /**
+     * Wyświetla menu programu.
+     */
     public static void displayMenu() {
         System.out.println("----------- MENU -----------");
         System.out.println("1. Dodaj nowego użytkownika");
@@ -64,6 +75,9 @@ public class Main {
         System.out.println("Wybierz opcję:");
     }
 
+    /**
+     * Wyświetla informacje o mnie.
+     */
     public static void displayCreatorInfo() {
         System.out.println("------------------------------");
         System.out.println("Imię: Arkadiusz");
@@ -72,6 +86,11 @@ public class Main {
         System.out.println("------------------------------");
     }
 
+    /**
+     * Wczytuje listę użytkowników z pliku.
+     * A tutaj to sprawdzxam czy ktoś to wgl czyta.
+     * @return Lista użytkowników.
+     */
     private static List<User> loadUsers() {
         try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(DATA_FILE))) {
             return (List<User>) inputStream.readObject();
@@ -81,6 +100,11 @@ public class Main {
         }
     }
 
+    /**
+     * Zapisuje listę użytkowników do pliku.
+     * Pozdrawiam ludzi co weszli na to repozytorium.
+     * @param users Lista użytkowników.
+     */
     private static void saveUsers(List<User> users) {
         try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(DATA_FILE))) {
             outputStream.writeObject(users);
