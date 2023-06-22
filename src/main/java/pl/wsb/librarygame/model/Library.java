@@ -1,9 +1,10 @@
 package pl.wsb.librarygame.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Library {
+public class Library implements Serializable {
     private List<Game> games;
 
     public Library() {

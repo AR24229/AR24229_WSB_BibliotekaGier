@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ffa0d0-d90a-4442-8d13-39af3ee7917f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/service/LibraryService.java" afterDir="false" />
+    <list default="true" id="c1ffa0d0-d90a-4442-8d13-39af3ee7917f" name="Changes" comment="Commit test 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/games.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/service/games.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2RZmkjUWjThxlhMLvcAOd9clZq9" />
@@ -50,9 +52,32 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.wsb.librarygame.Main" />
+      <module name="AR24229_WSB_BibliotekaGier" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.wsb.librarygame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,11 +86,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687466122622</updated>
-      <workItem from="1687466123622" duration="1605000" />
+      <workItem from="1687466123622" duration="2391000" />
+      <workItem from="1687468753251" duration="1621000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit test 2">
+      <option name="closed" value="true" />
+      <created>1687467760519</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687467760519</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="test_zapisywania_danych" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit test 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit test 2" />
   </component>
 </project>
