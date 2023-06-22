@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ffa0d0-d90a-4442-8d13-39af3ee7917f" name="Changes" comment="Commit test 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/games.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/service/games.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/users.txt" afterDir="false" />
+    <list default="true" id="c1ffa0d0-d90a-4442-8d13-39af3ee7917f" name="Changes" comment="Commit- Wprowadzenie możliwości zapisywania użytkowników :D">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/service/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/service/LibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.ser" beforeDir="false" afterPath="$PROJECT_DIR$/users.ser" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +28,23 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="test_zapisywania_danych" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="23424ad4-0edf-44db-ba72-f406f7ef63d4" />
+        <option name="url" value="https://github.com/AR24229/AR24229_WSB_BibliotekaGier.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="2RZmkjUWjThxlhMLvcAOd9clZq9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -87,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1687466122622</updated>
       <workItem from="1687466123622" duration="2391000" />
-      <workItem from="1687468753251" duration="1621000" />
+      <workItem from="1687468753251" duration="2953000" />
     </task>
     <task id="LOCAL-00001" summary="Commit test 2">
       <option name="closed" value="true" />
@@ -97,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1687467760519</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit- Wprowadzenie możliwości zapisywania użytkowników :D">
+      <option name="closed" value="true" />
+      <created>1687470529000</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687470529000</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +148,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit test 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit test 2" />
+    <MESSAGE value="Commit- Wprowadzenie możliwości zapisywania użytkowników :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit- Wprowadzenie możliwości zapisywania użytkowników :D" />
   </component>
 </project>

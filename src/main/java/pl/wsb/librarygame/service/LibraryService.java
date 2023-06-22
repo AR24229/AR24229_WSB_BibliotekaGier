@@ -8,7 +8,16 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * Klasa zawierająca metody służące do obsługi biblioteki gier.
+ */
 public class LibraryService {
+    /**
+     * Metoda dodająca nowego użytkownika do listy użytkowników.
+     *
+     * @param users    Lista użytkowników.
+     * @param nickname Nick użytkownika.
+     */
     public static void addUser(List<User> users, String nickname) {
         for (User user : users) {
             if (user.getNickname().equalsIgnoreCase(nickname)) {
@@ -20,6 +29,12 @@ public class LibraryService {
         System.out.println("Dodano nową bibliotekę dla użytkownika " + nickname + ".");
     }
 
+    /**
+     * Metoda wyświetlająca bibliotekę gier dla danego użytkownika.
+     *
+     * @param users    Lista użytkowników.
+     * @param nickname Nick użytkownika.
+     */
     public static void displayUserLibrary(List<User> users, String nickname) {
         for (User user : users) {
             if (user.getNickname().equalsIgnoreCase(nickname)) {
@@ -39,6 +54,13 @@ public class LibraryService {
         System.out.println("Nie znaleziono użytkownika o podanym nicku.");
     }
 
+    /**
+     * Metoda dodająca grę do biblioteki użytkownika.
+     *
+     * @param users     Lista użytkowników.
+     * @param nickname  Nick użytkownika.
+     * @param gameName  Nazwa gry.
+     */
     public static void addGameToUserLibrary(List<User> users, String nickname, String gameName) {
         for (User user : users) {
             if (user.getNickname().equalsIgnoreCase(nickname)) {
