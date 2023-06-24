@@ -1,5 +1,8 @@
 package pl.wsb.librarygame.model;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,15 +10,10 @@ import java.util.List;
 /**
  * Klasa reprezentująca bibliotekę gier.
  */
+@NoArgsConstructor
+@Getter
 public class Library implements Serializable {
-    private List<Game> games;
-
-    /**
-     * Konstruktor tworzący nową bibliotekę gier.
-     */
-    public Library() {
-        this.games = new ArrayList<>();
-    }
+    private List<Game> games = new ArrayList<>();
 
     /**
      * Metoda dodająca grę do biblioteki.
@@ -24,15 +22,6 @@ public class Library implements Serializable {
      */
     public void addGame(Game game) {
         games.add(game);
-    }
-
-    /**
-     * Metoda zwracająca listę gier w bibliotece.
-     *
-     * @return Lista gier w bibliotece.
-     */
-    public List<Game> getGames() {
-        return games;
     }
 
     /**

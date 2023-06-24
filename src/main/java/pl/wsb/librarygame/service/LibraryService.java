@@ -12,6 +12,10 @@ import java.util.List;
  * Klasa zawierająca metody służące do obsługi biblioteki gier.
  */
 public class LibraryService {
+
+    private LibraryService() {
+    }
+
     /**
      * Metoda dodająca nowego użytkownika do listy użytkowników.
      *

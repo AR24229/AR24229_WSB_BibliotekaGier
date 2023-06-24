@@ -20,44 +20,37 @@ public class Main {
      * @param args Argumenty wiersza poleceń.
      */
     public static void main(String[] args) {
-        List<User> users = loadUsers();
-        Scanner scanner = new Scanner(System.in);
+        var users = loadUsers();
+        var scanner = new Scanner(System.in);
 
         boolean exit = false;
         while (!exit) {
             displayMenu();
-            int choice = scanner.nextInt();
+            var choice = scanner.next();
             scanner.nextLine(); // Pobranie znaku nowej linii po wczytaniu liczby
-
             switch (choice) {
-                case 1:
+                case "1" -> {
                     System.out.println("Podaj nick użytkownika:");
                     String nickname = scanner.nextLine();
                     LibraryService.addUser(users, nickname);
-                    break;
-                case 2:
+                }
+                case "2" -> {
                     System.out.println("Podaj nick użytkownika, którego bibliotekę chcesz sprawdzić:");
                     String userNickname = scanner.nextLine();
                     LibraryService.displayUserLibrary(users, userNickname);
-                    break;
-                case 3:
+                }
+                case "3" -> {
                     System.out.println("Podaj nick użytkownika, do którego chcesz dodać grę:");
                     String userNicknameToAddGame = scanner.nextLine();
                     System.out.println("Podaj nazwę gry:");
                     String gameName = scanner.nextLine();
                     LibraryService.addGameToUserLibrary(users, userNicknameToAddGame, gameName);
-                    break;
-                case 4:
-                    displayCreatorInfo();
-                    break;
-                case 5:
-                    exit = true;
-                    break;
-                default:
-                    System.out.println("Nieprawidłowy wybór. Wybierz opcję od 1 do 5.");
+                }
+                case "4" -> displayCreatorInfo();
+                case "5" -> exit = true;
+                default -> System.out.println("Nieprawidłowy wybór. Wybierz opcję od 1 do 5.");
             }
         }
-
         saveUsers(users);
     }
 
@@ -89,6 +82,7 @@ public class Main {
     /**
      * Wczytuje listę użytkowników z pliku.
      * A tutaj to sprawdzxam czy ktoś to wgl czyta.
+     *
      * @return Lista użytkowników.
      */
     private static List<User> loadUsers() {
@@ -103,6 +97,7 @@ public class Main {
     /**
      * Zapisuje listę użytkowników do pliku.
      * Pozdrawiam ludzi co weszli na to repozytorium.
+     *
      * @param users Lista użytkowników.
      */
     private static void saveUsers(List<User> users) {

@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ffa0d0-d90a-4442-8d13-39af3ee7917f" name="Changes" comment="Commit- Wprowadzenie możliwości zapisywania użytkowników :D">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Game.java" afterDir="false" />
+    <list default="true" id="c1ffa0d0-d90a-4442-8d13-39af3ee7917f" name="Changes" comment="Commit- Wprowadzenie komentarzy i parametrów">
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/service/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/wsb/librarygame/service/LibraryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.ser" beforeDir="false" afterPath="$PROJECT_DIR$/users.ser" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,22 +16,23 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test_zapisywania_danych" />
+        <entry key="$PROJECT_DIR$" value="dodanie_komentarzy_i_parametrow" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -60,16 +55,35 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.wsb.librarygame" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+      <command value="mvn clean package" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.wsb.librarygame.Main" />
@@ -99,7 +113,10 @@
       <option name="presentableId" value="Default" />
       <updated>1687466122622</updated>
       <workItem from="1687466123622" duration="2391000" />
-      <workItem from="1687468753251" duration="2953000" />
+      <workItem from="1687468753251" duration="3759000" />
+      <workItem from="1687475361153" duration="67000" />
+      <workItem from="1687530373726" duration="175000" />
+      <workItem from="1687621286502" duration="3784000" />
     </task>
     <task id="LOCAL-00001" summary="Commit test 2">
       <option name="closed" value="true" />
@@ -117,7 +134,23 @@
       <option name="project" value="LOCAL" />
       <updated>1687470529000</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit- Wprowadzenie komentarzy i parametrów">
+      <option name="closed" value="true" />
+      <created>1687471891067</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687471891067</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit- Wprowadzenie komentarzy i parametrów">
+      <option name="closed" value="true" />
+      <created>1687624994513</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687624994513</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +182,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit test 2" />
     <MESSAGE value="Commit- Wprowadzenie możliwości zapisywania użytkowników :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit- Wprowadzenie możliwości zapisywania użytkowników :D" />
+    <MESSAGE value="Commit- Wprowadzenie komentarzy i parametrów" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit- Wprowadzenie komentarzy i parametrów" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
